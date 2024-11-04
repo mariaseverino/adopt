@@ -1,0 +1,27 @@
+/* The component style is inserted here. */
+@import '../../styles/color.scss';
+
+.banner {
+    background-color: $primary;
+    width: 100vw;
+    display: flex;
+    color: $white;
+    align-items: center;
+    justify-content: center;
+    gap: 150px;
+
+    .content {
+        width: 718px;
+        h2 {
+            line-height: 1.2;
+            font-size: 64px;
+            span {
+                color: $secundary;
+            }
+        }
+        p {
+            margin-top: 30px;
+            margin-bottom: 60px;
+        }
+    }
+}
