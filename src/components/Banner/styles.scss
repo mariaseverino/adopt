@@ -1,27 +1,99 @@
 /* The component style is inserted here. */
 @import '../../styles/color.scss';
 
-.banner {
-    background-color: $primary;
-    width: 100vw;
-    display: flex;
-    color: $white;
-    align-items: center;
-    justify-content: center;
-    gap: 150px;
+@media screen and (max-width: 425px) {
+    .banner {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        background-color: yellow;
+        background-color: $primary;
+        justify-content: center;
+        align-items: center;
+        color: $white;
 
-    .content {
-        width: 718px;
-        h2 {
-            line-height: 1.2;
-            font-size: 64px;
-            span {
-                color: $secundary;
+        img {
+            height: 300px;
+        }
+
+        .item-1 {
+            order: 2;
+        }
+
+        .item-2 {
+            order: 1;
+            padding: 16px;
+        }
+        .item-3 {
+            order: 3;
+            padding: 16px;
+            width: 100%;
+        }
+
+        .content {
+            h2 {
+                line-height: 1.2;
+                font-size: 1.6rem;
+                span {
+                    color: $secundary;
+                }
+            }
+            p {
+                font-size: 1rem;
+                margin-top: 30px;
             }
         }
-        p {
-            margin-top: 30px;
-            margin-bottom: 60px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .banner {
+        background-color: blue;
+        // display: flex;
+        height: 535px;
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* 200px para a div de altura total, o resto para as divs empilhadas */
+        grid-template-rows: 535px; /* A altura total da tela */
+
+        .content {
+            display: flex;
+            background-color: brown;
+            flex-direction: column;
+            grid-column: 2 / 3;
+        }
+
+        .teste {
+            // grid-column: 2 / 3; /* Fica na segunda coluna */
+            display: flex;
+        }
+    }
+}
+
+@media screen and (min-width: 960px) {
+    .banner {
+        background-color: red;
+
+        background-color: $primary;
+        width: 100vw;
+        display: flex;
+        color: $white;
+        align-items: center;
+        justify-content: center;
+        gap: 150px;
+
+        .content {
+            width: 718px;
+            h2 {
+                line-height: 1.2;
+                font-size: 64px;
+                span {
+                    color: $secundary;
+                }
+            }
+            p {
+                margin-top: 30px;
+                margin-bottom: 60px;
+            }
         }
     }
 }

@@ -6,12 +6,8 @@ import { Button } from '../Button';
 export function Banner() {
     return (
         <div className="banner">
-            <picture>
-                <source srcSet={dogWide} media="(min-width: 600px)" />
-                <source srcSet="mdn-logo-wide.png" media="(min-width: 600px)" />
-                <img src="mdn-logo-narrow.png" alt="MDN" />
-            </picture>
-            <div className="content">
+            <img src={dogWide} alt="MDN" className="item-1" />
+            <div className="content item-2 teste">
                 <h2>
                     Encontre seu Novo Melhor{' '}
                     <span className="destaque">Amigo</span>!
@@ -20,6 +16,8 @@ export function Banner() {
                     Milhares de animais esperam por um lar cheio de amor e
                     carinho.{' '}
                 </p>
+            </div>
+            <div className="btn item-3 teste">
                 <Button children="Encontre um pet" />
             </div>
         </div>
