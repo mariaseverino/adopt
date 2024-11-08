@@ -46,30 +46,53 @@
     }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 960px) {
     .banner {
-        background-color: blue;
-        // display: flex;
-        height: 535px;
+        background-color: $primary;
         display: grid;
-        grid-template-columns: 1fr 1fr; /* 200px para a div de altura total, o resto para as divs empilhadas */
-        grid-template-rows: 535px; /* A altura total da tela */
+        padding: 0 12px;
+        gap: 30px;
+
+        grid-template-areas:
+            'item content'
+            'item btn';
 
         .content {
+            // background-color: brown;
             display: flex;
-            background-color: brown;
             flex-direction: column;
-            grid-column: 2 / 3;
+            // align-items: center;
+            justify-content: end;
+            color: $white;
+            // padding-bottom: 30px;
+
+            h2 {
+                line-height: 1.2;
+                font-size: 1.6rem;
+                span {
+                    color: $secundary;
+                }
+            }
+            p {
+                font-size: 1rem;
+                margin-top: 30px;
+            }
         }
 
-        .teste {
-            // grid-column: 2 / 3; /* Fica na segunda coluna */
-            display: flex;
+        .item-1 {
+            grid-area: item;
+        }
+
+        .item-2 {
+            grid-area: content;
+        }
+        .item-3 {
+            grid-area: btn;
         }
     }
 }
 
-@media screen and (min-width: 960px) {
+@media screen and (min-width: 961px) {
     .banner {
         background-color: red;
 
