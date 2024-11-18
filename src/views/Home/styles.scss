@@ -1,1 +1,47 @@
 /* The component style is inserted here. */
+.cardSection {
+    background-color: rgb(220, 217, 217);
+    padding: 40px 20px;
+    // margin: 10px 0px;
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+
+.itemsSection {
+    display: flex;
+    flex-direction: column;
+    // gap: 40px;
+    justify-content: center;
+    padding: 40px 20px;
+    align-items: center;
+}
+
+.items {
+    display: flex;
+    // padding: 40px 20px;
+    margin-top: 40px;
+    gap: 30px;
+}
+
+.callToActionSection {
+    background-color: #a6bddf;
+    display: flex;
+    height: 350px;
+    align-items: center;
+    justify-content: center;
+
+    img {
+        height: 100%;
+    }
+
+    .content {
+        width: 400px;
+
+        p {
+            line-height: 1.2;
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+    }
+}

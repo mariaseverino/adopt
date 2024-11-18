@@ -1,11 +1,7 @@
-import { Banner } from './components/Banner';
+import { Home } from './views/Home';
 
 function App() {
-    return (
-        <>
-            <Banner />
-        </>
-    );
+    return <Home />;
 }
 
 export default App;

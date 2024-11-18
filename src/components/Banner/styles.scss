@@ -3,7 +3,6 @@
 
 @media screen and (max-width: 767px) {
     .banner {
-        width: 100vw;
         display: flex;
         flex-direction: column;
         background-color: yellow;
@@ -14,20 +13,6 @@
 
         img {
             height: 300px;
-        }
-
-        .item-1 {
-            order: 2;
-        }
-
-        .item-2 {
-            order: 1;
-            padding: 16px;
-        }
-        .item-3 {
-            order: 3;
-            padding: 16px;
-            width: 100%;
         }
 
         .content {
@@ -92,28 +77,47 @@
 //     }
 // }
 
+@media (max-width: 769px) {
+    .banner {
+        background-color: $primary;
+        align-items: center;
+        justify-content: center;
+        gap: 40px;
+        display: flex;
+        color: $white;
+
+        img {
+            width: 200px;
+        }
+        .content {
+            width: 300px;
+            h2 {
+                // line-height: 1.2;
+                font-size: 1.6rem;
+                span {
+                    color: $secundary;
+                }
+            }
+            p {
+                font-size: 0.9rem;
+                margin-top: 10px;
+                margin-bottom: 20px;
+            }
+        }
+    }
+}
+
 @media (min-width: 961px) {
     .banner {
-        background-color: red;
-
-        // background-color: $primary;
-        // width: 100vw;
-        // display: flex;
-        // color: $white;
-        // align-items: center;
-        // justify-content: center;
-        // gap: 150px;
-
-        display: grid;
-        // padding: 0 12px;
-        // gap: 30px;
-
-        grid-template-areas:
-            'item content'
-            'item btn';
+        background-color: $primary;
+        align-items: center;
+        justify-content: center;
+        gap: 70px;
+        display: flex;
+        color: $white;
 
         .content {
-            width: 718px;
+            width: 590px;
             h2 {
                 line-height: 1.2;
                 font-size: 64px;
@@ -125,17 +129,6 @@
                 margin-top: 30px;
                 margin-bottom: 60px;
             }
-        }
-
-        .item-1 {
-            grid-area: item;
-        }
-
-        .item-2 {
-            grid-area: content;
-        }
-        .item-3 {
-            grid-area: btn;
         }
     }
 }

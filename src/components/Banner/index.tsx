@@ -16,9 +16,9 @@ export function Banner() {
                     Milhares de animais esperam por um lar cheio de amor e
                     carinho.{' '}
                 </p>
-            </div>
-            <div className="btn item-3 teste">
-                <Button children="Encontre um pet" />
+                <div className="btn item-3 teste">
+                    <Button children="Encontre um pet" />
+                </div>
             </div>
         </div>
     );

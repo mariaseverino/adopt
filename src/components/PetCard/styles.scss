@@ -1,0 +1,29 @@
+/* The component style is inserted here. */
+@import '../../styles/color.scss';
+
+.card {
+    background-color: $white;
+    width: 200px;
+    padding: 10px;
+    border-radius: 12px;
+
+    img {
+        width: 100%;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        // height: 300px;
+    }
+
+    .petName {
+        // background-color: $secundary;
+        color: $black;
+        font-size: 1.2em;
+        font-weight: 600;
+        font-family: Inter;
+    }
+    .petDescription {
+        color: $black;
+        font-size: 0.9em;
+        font-family: Inter;
+    }
+}
