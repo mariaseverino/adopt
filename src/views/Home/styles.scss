@@ -27,21 +27,45 @@
 .callToActionSection {
     background-color: #a6bddf;
     display: flex;
-    height: 350px;
+    // height: 350px;
     align-items: center;
     justify-content: center;
+    // gap: 100px;
 
-    img {
-        height: 100%;
-    }
+    // img {
+    //     height: 100%;
+    // }
 
-    .content {
-        width: 400px;
+    // .content {
+    //     width: 400px;
 
-        p {
-            line-height: 1.2;
-            font-size: 1.2rem;
-            margin-bottom: 30px;
+    //     p {
+    //         line-height: 1.2;
+    //         font-size: 1.2rem;
+    //         margin-bottom: 30px;
+    //     }
+    // }
+
+    .wrapper {
+        // background-color: red;
+        width: 800px;
+        display: flex;
+        justify-content: space-between;
+        height: 350px;
+        align-items: center;
+
+        .content {
+            width: 400px;
+
+            p {
+                line-height: 1.2;
+                font-size: 1.2rem;
+                margin-bottom: 30px;
+            }
+        }
+
+        img {
+            height: 100%;
         }
     }
 }

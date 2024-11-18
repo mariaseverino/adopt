@@ -1,0 +1,96 @@
+/* The component style is inserted here. */
+@import '../../styles/color.scss';
+
+$primary: #2c3e50;
+
+footer {
+    background-color: $primary;
+    color: $secondary-color;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+
+    .footer-container {
+        display: flex;
+        justify-content: space-between;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .footer-info,
+    .footer-links,
+    .footer-social {
+        width: 30%;
+    }
+
+    h3 {
+        font-size: 18px;
+        margin-bottom: 15px;
+        color: $secondary-color;
+    }
+
+    .footer-info {
+        p {
+            font-size: 14px;
+            color: $text-color;
+        }
+    }
+
+    .footer-links {
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+
+            a {
+                color: $secondary-color;
+                text-decoration: none;
+                transition: color 0.3s ease;
+
+                &:hover {
+                    color: $secundary;
+                }
+            }
+        }
+    }
+
+    .footer-social {
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin-bottom: 10px;
+
+            .social-icon {
+                display: inline-block;
+                padding: 10px 20px;
+                border-radius: 50%;
+                background-color: $background-color;
+                color: $secondary-color;
+                text-align: center;
+                width: 40px;
+                height: 40px;
+                transition: background-color 0.3s ease;
+
+                &:hover {
+                    background-color: $secundary;
+                }
+            }
+        }
+    }
+
+    .footer-bottom {
+        text-align: center;
+        margin-top: 30px;
+        font-size: 14px;
+        color: $text-color;
+
+        p {
+            margin: 0;
+        }
+    }
+}

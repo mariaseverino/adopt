@@ -1,13 +1,13 @@
-import { Banner } from '../../components/Banner';
-import { PetCard } from '../../components/PetCard';
-import './styles.scss';
-import pet1 from '../../assets/gato1.jpg';
-import pet2 from '../../assets/gato2.jpg';
 import pet3 from '../../assets/cachorro1.jpg';
 import pet4 from '../../assets/cachorro2.jpg';
 import gato from '../../assets/gato.png';
-import { WhyAdoptItem } from '../../components/WhyAdoptItem';
+import pet1 from '../../assets/gato1.jpg';
+import pet2 from '../../assets/gato2.jpg';
+import { Banner } from '../../components/Banner';
 import { Button } from '../../components/Button';
+import { PetCard } from '../../components/PetCard';
+import { WhyAdoptItem } from '../../components/WhyAdoptItem';
+import './styles.scss';
 
 export interface Pet {
     name: string;
@@ -55,18 +55,20 @@ export function Home() {
                     <WhyAdoptItem />
                 </div>
             </div>
-            <div className="callToActionSection">
-                <div className="content item-2 teste">
-                    <p>
-                        Escolha amor e responsabilidade! Encontre o seu novo
-                        melhor amigo.
-                    </p>
-                    <div className="btn item-3 teste">
-                        <Button children="Encontre um pet" />
+            <section className="callToActionSection">
+                <div className="wrapper">
+                    <div className="content item-2 teste">
+                        <p>
+                            Escolha amor e responsabilidade! Encontre o seu novo
+                            melhor amigo.
+                        </p>
+                        <div className="btn item-3 teste">
+                            <Button children="Encontre um pet" />
+                        </div>
                     </div>
+                    <img src={gato} alt="MDN" className="item-1" />
                 </div>
-                <img src={gato} alt="MDN" className="item-1" />
-            </div>
+            </section>
         </>
     );
 }
