@@ -1,31 +1,14 @@
 /* The component style is inserted here. */
 .item {
-    // background-color: red;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 400px;
-    // gap: 30px;
+    // width: 380px;
 
     img {
-        width: 200px;
+        width: 60%;
+        max-width: 150px;
         margin-bottom: 15px;
-    }
-}
-
-@media (max-width: 769px) {
-    .item {
-        // background-color: red;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        width: 200px;
-        // gap: 30px;
-        font-size: 0.8rem;
-
-        img {
-            width: 100px;
-            margin-bottom: 15px;
-        }
+        // height: 274px;
     }
 }

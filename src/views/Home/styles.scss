@@ -1,11 +1,25 @@
 /* The component style is inserted here. */
+
 .cardSection {
     background-color: rgb(220, 217, 217);
     padding: 40px 20px;
     // margin: 10px 0px;
-    display: flex;
-    gap: 40px;
+    // display: flex;
+    gap: 30px;
     justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+
+    align-items: center;
+    overflow: hidden;
+    // width: 100%;
+    // background-color: red;
+}
+
+@media only screen and (min-width: 768px) {
+    .cardSection {
+        gap: 20px;
+    }
 }
 
 .itemsSection {
@@ -15,13 +29,18 @@
     justify-content: center;
     padding: 40px 20px;
     align-items: center;
-}
 
-.items {
-    display: flex;
-    // padding: 40px 20px;
-    margin-top: 40px;
-    gap: 30px;
+    .items {
+        // display: flex;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        // padding: 40px 20px;
+        margin-top: 40px;
+        gap: 30px;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
 }
 
 .callToActionSection {
@@ -31,6 +50,7 @@
     align-items: center;
     justify-content: center;
     // gap: 100px;
+    // padding: 20px;
 
     // img {
     //     height: 100%;
@@ -47,15 +67,16 @@
     // }
 
     .wrapper {
-        // background-color: red;
-        width: 800px;
+        background-color: red;
+        // width: 800px;
+        width: 100%;
         display: flex;
         justify-content: space-between;
         height: 350px;
-        align-items: center;
+        // align-items: center;
 
         .content {
-            width: 400px;
+            // width: 400px;
 
             p {
                 line-height: 1.2;
@@ -64,8 +85,8 @@
             }
         }
 
-        img {
-            height: 100%;
-        }
+        // img {
+        //     height: 100%;
+        // }
     }
 }

@@ -40,14 +40,14 @@ export function Home() {
     ];
     return (
         <>
-            <Banner />
+            {/* <Banner /> */}
             <div className="cardSection">
                 {pets.map((pet) => (
+                    // <h1>ttt</h1>
                     <PetCard pet={pet} />
                 ))}
             </div>
             <div className="itemsSection">
-                {/* <ul> */}
                 <h2>Por que Adotar?</h2>
                 <div className="items">
                     <WhyAdoptItem />
@@ -55,7 +55,7 @@ export function Home() {
                     <WhyAdoptItem />
                 </div>
             </div>
-            <section className="callToActionSection">
+            {/* <section className="callToActionSection">
                 <div className="wrapper">
                     <div className="content item-2 teste">
                         <p>
@@ -68,7 +68,7 @@ export function Home() {
                     </div>
                     <img src={gato} alt="MDN" className="item-1" />
                 </div>
-            </section>
+            </section> */}
         </>
     );
 }
